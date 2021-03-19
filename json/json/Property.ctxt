@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=properties
+comment0.target=JSONObject\ toJSONObject(java.util.Properties)
+comment0.text=\n\ Converts\ a\ property\ file\ object\ into\ a\ JSONObject.\ The\ property\ file\ object\ is\ a\ table\ of\ name\ value\ pairs.\n\ @param\ properties\ java.util.Properties\n\ @return\ JSONObject\n\ @throws\ JSONException\n
+comment1.params=jo
+comment1.target=java.util.Properties\ toProperties(JSONObject)
+comment1.text=\n\ Converts\ the\ JSONObject\ into\ a\ property\ file\ object.\n\ @param\ jo\ JSONObject\n\ @return\ java.util.Properties\n\ @throws\ JSONException\n
+numComments=2

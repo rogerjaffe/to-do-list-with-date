@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=string
+comment0.target=java.lang.String\ escape(java.lang.String)
+comment0.text=\n\ Replace\ special\ characters\ with\ XML\ escapes\:\n\ <pre>\n\ &amp;\ <small>(ampersand)</small>\ is\ replaced\ by\ &amp;amp;\n\ &lt;\ <small>(less\ than)</small>\ is\ replaced\ by\ &amp;lt;\n\ &gt;\ <small>(greater\ than)</small>\ is\ replaced\ by\ &amp;gt;\n\ &quot;\ <small>(double\ quote)</small>\ is\ replaced\ by\ &amp;quot;\n\ </pre>\n\ @param\ string\ The\ string\ to\ be\ escaped.\n\ @return\ The\ escaped\ string.\n
+comment1.params=string
+comment1.target=void\ noSpace(java.lang.String)
+comment1.text=\n\ Throw\ an\ exception\ if\ the\ string\ contains\ whitespace.\n\ Whitespace\ is\ not\ allowed\ in\ tagNames\ and\ attributes.\n\ @param\ string\ A\ string.\n\ @throws\ JSONException\n
+comment2.params=x\ context\ name
+comment2.target=boolean\ parse(XMLTokener,\ JSONObject,\ java.lang.String)
+comment2.text=\n\ Scan\ the\ content\ following\ the\ named\ tag,\ attaching\ it\ to\ the\ context.\n\ @param\ x\ \ \ \ \ \ \ The\ XMLTokener\ containing\ the\ source\ string.\n\ @param\ context\ The\ JSONObject\ that\ will\ include\ the\ new\ material.\n\ @param\ name\ \ \ \ The\ tag\ name.\n\ @return\ true\ if\ the\ close\ tag\ is\ processed.\n\ @throws\ JSONException\n
+comment3.params=string
+comment3.target=java.lang.Object\ stringToValue(java.lang.String)
+comment3.text=\n\ Try\ to\ convert\ a\ string\ into\ a\ number,\ boolean,\ or\ null.\ If\ the\ string\n\ can't\ be\ converted,\ return\ the\ string.\ This\ is\ much\ less\ ambitious\ than\n\ JSONObject.stringToValue,\ especially\ because\ it\ does\ not\ attempt\ to\n\ convert\ plus\ forms,\ octal\ forms,\ hex\ forms,\ or\ E\ forms\ lacking\ decimal\n\ points.\n\ @param\ string\ A\ String.\n\ @return\ A\ simple\ JSON\ value.\n
+comment4.params=string
+comment4.target=JSONObject\ toJSONObject(java.lang.String)
+comment4.text=\n\ Convert\ a\ well-formed\ (but\ not\ necessarily\ valid)\ XML\ string\ into\ a\n\ JSONObject.\ Some\ information\ may\ be\ lost\ in\ this\ transformation\n\ because\ JSON\ is\ a\ data\ format\ and\ XML\ is\ a\ document\ format.\ XML\ uses\n\ elements,\ attributes,\ and\ content\ text,\ while\ JSON\ uses\ unordered\n\ collections\ of\ name/value\ pairs\ and\ arrays\ of\ values.\ JSON\ does\ not\n\ does\ not\ like\ to\ distinguish\ between\ elements\ and\ attributes.\n\ Sequences\ of\ similar\ elements\ are\ represented\ as\ JSONArrays.\ Content\n\ text\ may\ be\ placed\ in\ a\ "content"\ member.\ Comments,\ prologs,\ DTDs,\ and\n\ <code>&lt;[\ [\ ]]></code>\ are\ ignored.\n\ @param\ string\ The\ source\ string.\n\ @return\ A\ JSONObject\ containing\ the\ structured\ data\ from\ the\ XML\ string.\n\ @throws\ JSONException\n
+comment5.params=object
+comment5.target=java.lang.String\ toString(java.lang.Object)
+comment5.text=\n\ Convert\ a\ JSONObject\ into\ a\ well-formed,\ element-normal\ XML\ string.\n\ @param\ object\ A\ JSONObject.\n\ @return\ \ A\ string.\n\ @throws\ \ JSONException\n
+comment6.params=object\ tagName
+comment6.target=java.lang.String\ toString(java.lang.Object,\ java.lang.String)
+comment6.text=\n\ Convert\ a\ JSONObject\ into\ a\ well-formed,\ element-normal\ XML\ string.\n\ @param\ object\ A\ JSONObject.\n\ @param\ tagName\ The\ optional\ name\ of\ the\ enclosing\ tag.\n\ @return\ A\ string.\n\ @throws\ JSONException\n
+numComments=7

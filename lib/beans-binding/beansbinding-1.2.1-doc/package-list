@@ -1,0 +1,11 @@
+org.jdesktop.beansbinding
+org.jdesktop.beansbinding.ext
+org.jdesktop.el
+org.jdesktop.el.impl
+org.jdesktop.el.impl.lang
+org.jdesktop.el.impl.parser
+org.jdesktop.el.impl.util
+org.jdesktop.observablecollections
+org.jdesktop.swingbinding
+org.jdesktop.swingbinding.adapters
+org.jdesktop.swingbinding.impl

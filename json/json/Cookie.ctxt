@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=string
+comment0.target=java.lang.String\ escape(java.lang.String)
+comment0.text=\n\ Produce\ a\ copy\ of\ a\ string\ in\ which\ the\ characters\ '+',\ '%',\ '\=',\ ';'\n\ and\ control\ characters\ are\ replaced\ with\ "%hh".\ This\ is\ a\ gentle\ form\n\ of\ URL\ encoding,\ attempting\ to\ cause\ as\ little\ distortion\ to\ the\n\ string\ as\ possible.\ The\ characters\ '\='\ and\ ';'\ are\ meta\ characters\ in\n\ cookies.\ By\ convention,\ they\ are\ escaped\ using\ the\ URL-encoding.\ This\ is\n\ only\ a\ convention,\ not\ a\ standard.\ Often,\ cookies\ are\ expected\ to\ have\n\ encoded\ values.\ We\ encode\ '\='\ and\ ';'\ because\ we\ must.\ We\ encode\ '%'\ and\n\ '+'\ because\ they\ are\ meta\ characters\ in\ URL\ encoding.\n\ @param\ string\ The\ source\ string.\n\ @return\ \ \ \ \ \ \ The\ escaped\ result.\n
+comment1.params=string
+comment1.target=JSONObject\ toJSONObject(java.lang.String)
+comment1.text=\n\ Convert\ a\ cookie\ specification\ string\ into\ a\ JSONObject.\ The\ string\n\ will\ contain\ a\ name\ value\ pair\ separated\ by\ '\='.\ The\ name\ and\ the\ value\n\ will\ be\ unescaped,\ possibly\ converting\ '+'\ and\ '%'\ sequences.\ The\n\ cookie\ properties\ may\ follow,\ separated\ by\ ';',\ also\ represented\ as\n\ name\=value\ (except\ the\ secure\ property,\ which\ does\ not\ have\ a\ value).\n\ The\ name\ will\ be\ stored\ under\ the\ key\ "name",\ and\ the\ value\ will\ be\n\ stored\ under\ the\ key\ "value".\ This\ method\ does\ not\ do\ checking\ or\n\ validation\ of\ the\ parameters.\ It\ only\ converts\ the\ cookie\ string\ into\n\ a\ JSONObject.\n\ @param\ string\ The\ cookie\ specification\ string.\n\ @return\ A\ JSONObject\ containing\ "name",\ "value",\ and\ possibly\ other\n\ \ members.\n\ @throws\ JSONException\n
+comment2.params=jo
+comment2.target=java.lang.String\ toString(JSONObject)
+comment2.text=\n\ Convert\ a\ JSONObject\ into\ a\ cookie\ specification\ string.\ The\ JSONObject\n\ must\ contain\ "name"\ and\ "value"\ members.\n\ If\ the\ JSONObject\ contains\ "expires",\ "domain",\ "path",\ or\ "secure"\n\ members,\ they\ will\ be\ appended\ to\ the\ cookie\ specification\ string.\n\ All\ other\ members\ are\ ignored.\n\ @param\ jo\ A\ JSONObject\n\ @return\ A\ cookie\ specification\ string\n\ @throws\ JSONException\n
+comment3.params=string
+comment3.target=java.lang.String\ unescape(java.lang.String)
+comment3.text=\n\ Convert\ <code>%</code><i>hh</i>\ sequences\ to\ single\ characters,\ and\n\ convert\ plus\ to\ space.\n\ @param\ string\ A\ string\ that\ may\ contain\n\ \ \ \ \ \ <code>+</code>&nbsp;<small>(plus)</small>\ and\n\ \ \ \ \ \ <code>%</code><i>hh</i>\ sequences.\n\ @return\ The\ unescaped\ string.\n
+numComments=4

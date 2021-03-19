@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=JSONStringer()
+comment0.text=\n\ Make\ a\ fresh\ JSONStringer.\ It\ can\ be\ used\ to\ build\ one\ JSON\ text.\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ Return\ the\ JSON\ text.\ This\ method\ is\ used\ to\ obtain\ the\ product\ of\ the\n\ JSONStringer\ instance.\ It\ will\ return\ <code>null</code>\ if\ there\ was\ a\n\ problem\ in\ the\ construction\ of\ the\ JSON\ text\ (such\ as\ the\ calls\ to\n\ <code>array</code>\ were\ not\ properly\ balanced\ with\ calls\ to\n\ <code>endArray</code>).\n\ @return\ The\ JSON\ text.\n
+numComments=2

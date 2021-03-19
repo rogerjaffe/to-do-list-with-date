@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=string
+comment0.target=JSONArray\ toJSONArray(java.lang.String)
+comment0.text=\n\ Convert\ a\ well-formed\ (but\ not\ necessarily\ valid)\ XML\ string\ into\ a\n\ JSONArray\ using\ the\ JsonML\ transform.\ Each\ XML\ tag\ is\ represented\ as\n\ a\ JSONArray\ in\ which\ the\ first\ element\ is\ the\ tag\ name.\ If\ the\ tag\ has\n\ attributes,\ then\ the\ second\ element\ will\ be\ JSONObject\ containing\ the\n\ name/value\ pairs.\ If\ the\ tag\ contains\ children,\ then\ strings\ and\n\ JSONArrays\ will\ represent\ the\ child\ tags.\n\ Comments,\ prologs,\ DTDs,\ and\ <code>&lt;[\ [\ ]]></code>\ are\ ignored.\n\ @param\ string\ The\ source\ string.\n\ @return\ A\ JSONArray\ containing\ the\ structured\ data\ from\ the\ XML\ string.\n\ @throws\ JSONException\n
+comment1.params=string
+comment1.target=JSONObject\ toJSONObject(java.lang.String)
+comment1.text=\n\ Convert\ a\ well-formed\ (but\ not\ necessarily\ valid)\ XML\ string\ into\ a\n\ JSONObject\ using\ the\ JsonML\ transform.\ Each\ XML\ tag\ is\ represented\ as\n\ a\ JSONObject\ with\ a\ "tagName"\ property.\ If\ the\ tag\ has\ attributes,\ then\n\ the\ attributes\ will\ be\ in\ the\ JSONObject\ as\ properties.\ If\ the\ tag\n\ contains\ children,\ the\ object\ will\ have\ a\ "childNodes"\ property\ which\n\ will\ be\ an\ array\ of\ strings\ and\ JsonML\ JSONObjects.\n\n\ Comments,\ prologs,\ DTDs,\ and\ <code>&lt;[\ [\ ]]></code>\ are\ ignored.\n\ @param\ string\ The\ XML\ source\ text.\n\ @return\ A\ JSONObject\ containing\ the\ structured\ data\ from\ the\ XML\ string.\n\ @throws\ JSONException\n
+comment2.params=ja
+comment2.target=java.lang.String\ toString(JSONArray)
+comment2.text=\n\ Reverse\ the\ JSONML\ transformation,\ making\ an\ XML\ text\ from\ a\ JSONArray.\n\ @param\ ja\ A\ JSONArray.\n\ @return\ An\ XML\ string.\n\ @throws\ JSONException\n
+comment3.params=jo
+comment3.target=java.lang.String\ toString(JSONObject)
+comment3.text=\n\ Reverse\ the\ JSONML\ transformation,\ making\ an\ XML\ text\ from\ a\ JSONObject.\n\ The\ JSONObject\ must\ contain\ a\ "tagName"\ property.\ If\ it\ has\ children,\n\ then\ it\ must\ have\ a\ "childNodes"\ property\ containing\ an\ array\ of\ objects.\n\ The\ other\ properties\ are\ attributes\ with\ string\ values.\n\ @param\ jo\ A\ JSONObject.\n\ @return\ An\ XML\ string.\n\ @throws\ JSONException\n
+numComments=4
